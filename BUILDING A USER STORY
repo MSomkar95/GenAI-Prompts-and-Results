@@ -1,0 +1,35 @@
+PROMPT: You are a world class product owner with good expertise in writing user stories. Please write a set of 8 user stories and epic with reference to the following situation, you may consider both internal as well as external customers while writing the user stories: "A new college student has arrived on campus to begin their freshman year. They do not yet have a checking account, debit card, or credit card, but they do have a job starting in a week for which they can get paid by direct deposit. They need to begin accessing financial services, have the ability to get paid, make purchases, and manage their money. " Epic: As a new college student, I need a comprehensive and user-friendly way to manage my finances, including accessing financial services, receiving payments, making purchases, and tracking my spending.
+RESPONSE: 
+User Story 1:
+As a new college student,
+I want to open a checking account
+So that I can receive my paycheck and other funds electronically.
+User Story 2:
+As a new college student,
+I want to obtain a debit card
+So that I can make purchases and access cash without having to carry large amounts of money with me.
+User Story 3:
+As a new college student,
+I want to apply for a credit card
+So that I can build my credit and have a convenient way to make purchases.
+User Story 4:
+As a new college student,
+I want to be able to track my spending
+So that I can stay on budget and avoid overspending.
+User Story 5:
+As a new college student,
+I want to be able to transfer money between my checking and savings accounts
+So that I can easily manage my money and save for future expenses.
+User Story 6:
+As a new college student,
+I want to be able to set up automatic payments for recurring bills
+So that I can avoid late fees and penalties.
+User Story 7:
+As a new college student,
+I want to be able to access my financial information online and through a mobile app
+So that I can manage my money conveniently and securely from anywhere.
+User Story 8:
+As a new college student,
+I want to be able to receive financial advice and assistance from a knowledgeable and friendly customer service representative
+So that I can make informed financial decisions and avoid potential pitfalls.
+With reference to the above query please provide 2 more options to the same query.
