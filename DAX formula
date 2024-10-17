@@ -1,0 +1,62 @@
+# MS Omkar: 
+
+Can you explain the following DAX formula:"Revenue contribution % = CALCULATE (
+DIVIDE (
+SUM ( 'Customer details'[Revenue_total] ),
+CALCULATE ( SUM ( 'Customer details'[Revenue_total] ), ALL ( 'Customer details'[Customer Value Category] ) )
+)
+)
+"
+
+
+# Gemini1.5: 
+
+This DAX formula calculates the revenue contribution percentage for each customer value category. Let's break it down step by step:
+
+1. CALCULATE:
+
+This function is used to modify the context of a measure. It allows you to perform calculations on a filtered subset of data. In this case, it's used to calculate the revenue contribution percentage for each category.
+
+2. DIVIDE:
+
+This function performs division. Here, it divides the sum of revenue for the current category by the total revenue across all categories.
+
+3. SUM('Customer details'[Revenue_total]):
+
+This part calculates the total revenue for the current category. It sums up the 'Revenue_total' column in the 'Customer details' table, considering the filter context applied by the CALCULATE function.
+
+4. CALCULATE ( SUM ( 'Customer details'[Revenue_total] ), ALL ( 'Customer details'[Customer Value Category] ) ):
+
+This part calculates the total revenue across all categories. It uses the CALCULATE function to remove the filter on 'Customer Value Category'. This effectively calculates the total revenue for all categories.
+
+5. Combined:
+
+The formula combines the sum of revenue for the current category (numerator) and the total revenue across all categories (denominator) using the DIVIDE function. This gives you the revenue contribution percentage for the current category.
+
+In essence, the formula does the following:
+
+For each customer value category:
+
+It sums the total revenue for that category.
+
+It calculates the total revenue across all categories.
+
+It divides the category revenue by the total revenue, giving you the percentage contribution of that category to the overall revenue.
+
+Example:
+
+Suppose you have the following data:
+
+Customer Value Category	Revenue_total
+High Value	$1000
+Medium Value	$500
+Low Value	$250
+The formula will calculate the following:
+
+High Value: (1000 / (1000 + 500 + 250)) * 100 = 55.56%
+
+Medium Value: (500 / (1000 + 500 + 250)) * 100 = 27.78%
+
+Low Value: (250 / (1000 + 500 + 250)) * 100 = 16.67%
+
+This formula provides you with a clear understanding of the contribution of each customer value category to the overall revenue.
